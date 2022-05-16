@@ -1,27 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <headerC />
+  <NavbarC />
+  <MainPromoC />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import HeaderC from './components/HeaderC.vue';
+import NavbarC from './components/NavbarC.vue';
+import MainPromoC from './components/MainPromoC.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    HeaderC, NavbarC, MainPromoC
   }
 });
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
