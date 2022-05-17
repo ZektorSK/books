@@ -6,7 +6,7 @@ module.exports = {
     theme: {
       extend: {
         fontFamily:{
-          'dejamono': 'DejaVu Sans Mono, monospace'
+          tahoma: ['Tahoma', 'Geneva', 'sans-serif']
         }
       },
     },
