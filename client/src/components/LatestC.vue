@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center bg-orange-100">
         <article class="flex flex-col justify-center items-center mt-8 max-w-[800px]">
             <h2 class="font-tahoma text-5xl text-center font-bold">Bringing the <span class="bg-black text-white">latest</span> titles to you...</h2>
 
