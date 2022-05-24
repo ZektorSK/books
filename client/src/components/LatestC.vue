@@ -1,46 +1,33 @@
 <template>
-    <div class="flex flex-col justify-center items-center bg-orange-100">
-        <article class="flex flex-col justify-center items-center mt-8 max-w-[800px]">
-            <h2 class="font-tahoma text-5xl text-center font-bold">Bringing the <span class="bg-black text-white">latest</span> titles to you...</h2>
+    <div class="flex justify-center items-center flex-col bg-[rgb(255,250,241)]">
+        <div class="flex justify-center items-center flex-col max-w-[1000px]">
+            <h3 class="font-tahoma text-5xl mt-8 font-bold text-slate-800">Bringing the latest titles that are worth reading full</h3>
 
-            <div class="flex flex-row justify-center items-center gap-8 mt-8">
-                <img src="../assets/book_taipan.jpg" v-show="deviceW > 768" class="h-[350px] w-[250px] opacity-50 hover:opacity-80 hover:cursor-pointer hover:shadow-lg transition-opacity ease-in-out">
-
-                <img src="arrow" v-show="deviceW < 768">
-                <figure class="">
-                    <img src="../assets/book_metro.jpg" class="h-[300px] w-[250px] md:h-[350px] md:w-[250px] border-b-4 border-amber-500 shadow-lg" title="METRO 2033" alt="The book cover of METRO 2033">
-                    <figcaption class="font-mono font-bold text-5xl uppercase text-center m-2">METRO 2033</figcaption>
-                </figure>
-                <img src="arrow" v-show="deviceW < 768">
-
-                <img src="../assets/book_picnic.png" v-show="deviceW > 768" class="h-[350px] w-[250px] opacity-50 hover:opacity-80 hover:cursor-pointer hover:shadow-lg transition-opacity ease-in-out">
+            <div class="flex justify-center items-center flex-row gap-8 mt-6 pb-8 border-b-4 border-amber-500 border-opacity-50">
+                <img src="../assets/arrow.png" class="w-14 h-14 rotate-[180deg]">
+                <img src="../assets/book_taipan.jpg" class="w-[200px] h-[300px] opacity-60">
+                <img src="../assets/book_metro.jpg" class="w-[240px] h-[340px]">
+                <img src="../assets/book_picnic.png" class="w-[200px] h-[300px] opacity-60">
+                <img src="../assets/arrow.png" class="w-14 h-14">
             </div>
 
-            <ul class="inline-flex justify-center gap-2 mt-4">
-                <li class="w-14 h-14">
-                    <img src="../assets/star.png">
-                </li>
-                <li class="w-14 h-14">
-                    <img src="../assets/star.png">
-                </li>
-                <li class="w-14 h-14">
-                    <img src="../assets/star.png">
-                </li>
-                <li class="w-14 h-14 half">
-                    <img src="../assets/star.png">
-                </li>
-                <li class="w-14 h-14">
-                    <img src="../assets/star.png">
-                </li>
-            </ul>
+            <h4 class="font-tahoma text-4xl font-bold text-slate-900">METRO 2033</h4>
+        </div>
 
-            <small class="font-bold text-base">5/5</small>
+        <div class="text-left max-w-[800px] pb-8">
+            <span class="flex flex-row gap-4 mt-4">
+                <h5 class="text-left font-tahoma font-bold text-xl pb-8">Rating: </h5>
+                <img src="../assets/star.png" class="w-6 h-6">
+                <img src="../assets/star.png" class="w-6 h-6">
+                <img src="../assets/star.png" class="w-6 h-6">
+                <img src="../assets/star.png" class="w-6 h-6">
+                <img src="../assets/star.png" class="w-6 h-6">
+            </span>
 
-            <div class="bg-amber-600 text-white font-bold mt-2 max-w-[300px] p-2 italic text-lg mb-[50px]">
-                <q>Truly a work of art that pushes you to think about the very point of our existence.</q>
-            </div>
+            <q class="font-tahoma font-bold text-2xl italic">A book that changes the course of life for the many wanderers of the metro that we call life</q>
 
-        </article>
+        </div>
+
     </div>
 </template>
 
@@ -50,7 +37,6 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     data(){
         return{
-            deviceW: window.screen.width
         }
     }
 });
